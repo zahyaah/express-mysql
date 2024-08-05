@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "31d3fc16-da65-43fc-b679-9f0e79a1539f",
+		"name": "Cabs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "35181072"
+	},
+	"item": [
+		{
+			"name": "GET: Cabs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET-BY-ID: Cabs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE: cab",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model\": \"City\",\n    \"brand\": \"Honda\",\n    \"year\": 2024,\n    \"color\": \"Blue\",\n    \"license_plate\": \"ZAYD12\",\n    \"driver_name\": \"Dean\",\n    \"driver_contact\": \"9812489321\",\n    \"capacity\": 4,\n    \"is_available\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5001/get/cab/"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE: cab",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE: cab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model\": \"Sonet\",\n    \"brand\": \"Kia\",\n    \"year\": 2023,\n    \"color\": \"White\",\n    \"license_plate\": \"APV123\",\n    \"driver_name\": \"Kirk\",\n    \"driver_contact\": \"9988776655\",\n    \"capacity\": 4,\n    \"is_available\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5001/cab"
+			},
+			"response": []
+		}
+	]
+}
